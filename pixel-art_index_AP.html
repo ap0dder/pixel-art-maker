@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>"Pixel Art Maker!!!"</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calibri">
+    <link rel="stylesheet" href="pixel-art_styles_AP.css">
+</head>
+<body>
+    <h1>"Pixel Art Maker!!!"</h1>
+
+    <h2>First, Build your own Design Canvas:</h2>
+    <form id="sizePicker" onsubmit="return formSubmit(event)">
+        How many pixel boxes do you want in vertical?
+        <input type="number" id="inputHeight" name="height" min="1" value="1">
+        <br>
+        How many pixel boxes do you want in horizontal?
+        <input type="number" id="inputWidth" name="width" min="1" value="1">
+        <br>
+        OK, Build my Design Canvas:
+        <input type="submit" id="submitButtonOne">
+    </form>
+
+    <h2>Now, Pick a Color of your Digital Paintbursh:</h2>
+    <input type="color" id="colorPicker">
+
+    <h2>Make your Pixel Art here:</h2>
+    <table id="pixelCanvas"></table>
+
+    <h3>Made a Mistake? OR Want to do this Again?</h3>
+    <form id="sizePicker" onsubmit="return formSubmit(event)">
+        Yes, Clear my Canvas:
+        <input type="submit" id="submitButtonTwo">
+    </form>
+
+    <script src="pixel-art_designs_AP.js"></script>
+</body>
+</html>
